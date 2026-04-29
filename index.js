@@ -41,9 +41,7 @@ app.post('/Expense', async (req,res)=>{
     }catch(error) {
         console.error('Error saving expense',error)
         res.status(404).json({error:"failed to save"})
-
     }
-
 })
 
 app.get('/Expense',async (req,res)=>{
